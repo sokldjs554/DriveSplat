@@ -68,3 +68,9 @@ pip install -r requirements.txt
 
 - Kerbl et al., "3D Gaussian Splatting", SIGGRAPH 2023
 - Yang et al., "Depth Anything V2", NeurIPS 2024
+
+## 실험 결과 시각화
+
+![Ablation Study](assets/results/ablation_final.png)
+
+![Point Cloud BEV](assets/results/bev_comparison.png)
