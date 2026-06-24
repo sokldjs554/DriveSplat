@@ -74,3 +74,16 @@ pip install -r requirements.txt
 ![Ablation Study](assets/results/ablation_final.png)
 
 ![Point Cloud BEV](assets/results/bev_comparison.png)
+
+## KITTI Depth Evaluation
+
+| Alignment | AbsRel (lower is better) | RMSE |
+|-----------|----------|--------|
+| Linear scale | 1.2152 | 20.554m |
+| Affine alignment (custom) | **0.3306** | **7.193m** |
+
+Key finding: Depth Anything V2 outputs disparity (s=-4.3, negative scale).
+Affine alignment (d_metric = s x d_pred + t) achieves 4x improvement.
+Next step: metric fine-tuning with KITTI LiDAR GT -> target AbsRel ~0.08
+
+![KITTI Depth Evaluation](assets/results/kitti_depth_eval.png)
