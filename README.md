@@ -2,8 +2,9 @@
 
 **Depth-Guided 3D Gaussian Splatting Initialization**
 
-단안 카메라 영상에서 Depth Anything V2로 추정한 depth map을
-3D Gaussian Splatting의 초기화에 활용하는 파이프라인입니다.
+단안 카메라만으로 실제 도로의 3D 구조를 복원하기 위해
+Depth Anything V2와 3D Gaussian Splatting을 연결한
+3D Reconstruction 파이프라인을 직접 설계하고 구현했습니다.
 
 ---
 
